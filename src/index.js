@@ -1,4 +1,4 @@
-export const is: { [type: string]: RegExp } = {
+export const is = {
   number: /[-+]?(?:\d*\.\d+|\d+)/,
   integer: /[-+]?\d+/,
   percentage: /[-+]?(?:\d*\.\d+|\d+)\%/,

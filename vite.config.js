@@ -6,7 +6,7 @@ export default defineConfig({
     target: 'es2017',
     lib: {
       name: 'cssrxp',
-      entry: './src/index.ts',
+      entry: './src/index.js',
       formats: ['es', 'iife', 'cjs', 'umd'],
       fileName: (f) => `index.${f}.js`
     },
