@@ -7,7 +7,8 @@ export default defineConfig({
     lib: {
       name: 'cssrxp',
       entry: './src/index.ts',
-      formats: ['es', 'iife', 'cjs', 'umd']
+      formats: ['es', 'iife', 'cjs', 'umd'],
+      fileName: (f) => `index.${f}.js`
     },
     rollupOptions: {
       output: {

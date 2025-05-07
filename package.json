@@ -1,11 +1,13 @@
 {
   "name": "cssrxp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "RegExp pattern library for simple CSS data-types matching",
   "author": "NOuSantx <nousantx@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/nousantx/cssrxp#readme",
-  "keywords": ["keywords"],
+  "keywords": [
+    "keywords"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nousantx/cssrxp.git"
@@ -13,7 +15,12 @@
   "bugs": {
     "url": "https://github.com/nousantx/cssrxp/issues"
   },
-  "files": ["dist", "package.json", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "types": "dist/index.d.ts",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
