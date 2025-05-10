@@ -1,7 +1,7 @@
 {
   "name": "cssrxp",
-  "version": "0.2.0",
-  "description": "RegExp pattern library for simple CSS data-types matching",
+  "version": "0.3.0",
+  "description": "RegExp pattern library for simple CSS related string matching",
   "author": "NOuSantx <nousantx@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/nousantx/cssrxp#readme",
