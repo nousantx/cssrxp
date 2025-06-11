@@ -1,4 +1,4 @@
-export const numberP = /[-+]?(?:\d*\.\d+|\d+)/
+export const numberPattern = /[-+]?(?:\d*\.\d+|\d+)/
 export const integer = /[-+]?\d+/
 export const percentage = /[-+]?(?:\d*\.\d+|\d+)\%/
 export const fraction = /(?:[-+]?(?:\d*\.\d+|\d+)fr)/
@@ -16,7 +16,7 @@ export const selector =
   /(?:[.#][a-zA-Z0-9_-]+|[a-zA-Z_][a-zA-Z0-9_-]*|\*|\[(?:[a-zA-Z0-9_-]+(?:[~|^$*]?=(?:"[^"]*"|'[^']*'|[^\]]*))?)?\]|::?[a-zA-Z][a-zA-Z0-9_-]*(?:\([^\)]*\))?|>|\+|~|\s|,)+/
 
 export const has = {
-  number: numberP,
+  number: numberPattern,
   integer,
   percentage,
   fraction,
@@ -39,7 +39,7 @@ for (const [key, pattern] of Object.entries(has)) {
 export default {
   is,
   has,
-  numberP,
+  numberPattern,
   integer,
   percentage,
   fraction,

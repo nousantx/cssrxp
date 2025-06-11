@@ -1,6 +1,6 @@
 type RegExpType = { [type: string]: RegExp }
 
-export declare const numberP: RegExp
+export declare const numberPattern: RegExp
 export declare const integer: RegExp
 export declare const percentage: RegExp
 export declare const fraction: RegExp
@@ -19,7 +19,7 @@ export declare const has: RegExpType
 export default {
   is,
   has,
-  numberP,
+  numberPattern,
   integer,
   percentage,
   fraction,
