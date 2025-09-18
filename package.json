@@ -1,12 +1,15 @@
 {
   "name": "cssrxp",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "RegExp pattern library for simple CSS related string matching",
   "author": "NOuSantx <nousantx@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/nousantx/cssrxp#readme",
   "keywords": [
-    "keywords"
+    "css",
+    "regexp",
+    "css-value",
+    "css-pattern"
   ],
   "repository": {
     "type": "git",
@@ -22,22 +25,30 @@
     "README.md",
     "LICENSE"
   ],
-  "types": "./index.d.ts",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
   "browser": "./dist/index.iife.js",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs.js",
       "import": "./dist/index.es.js"
     }
   },
   "scripts": {
-    "build": "vite build"
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "build:prod": "pnpm type:check && pnpm build --minify && pnpm type:build",
+    "type:check": "tsc --noEmit",
+    "type:build": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "packageManager": "pnpm@10.4.0+sha512.6b849d0787d97f8f4e1f03a9b8ff8f038e79e153d6f11ae539ae7c435ff9e796df6a862c991502695c7f9e8fac8aeafc1ac5a8dab47e36148d183832d886dd52",
   "devDependencies": {
-    "vite": "^6.3.5"
-  }
+    "typescript": "^5.7.3",
+    "vite": "^6.2.3",
+    "vitest": "^3.2.1"
+  },
+  "packageManager": "pnpm@10.11.0"
 }
