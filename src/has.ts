@@ -77,7 +77,7 @@ import {
 
 export const has = {
   // basic
-  numberPattern,
+  number: numberPattern,
   integer,
   percentage,
   fraction,
