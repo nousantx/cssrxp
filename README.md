@@ -1,6 +1,6 @@
 # `cssrxp`
 
-A small `RegExp` library related with CSS data-types.
+A CSS-focused `RegExp` patterns library.
 
 ## Installation
 
